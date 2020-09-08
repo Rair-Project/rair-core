@@ -14,10 +14,12 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+mod cmd;
 mod env;
 mod project;
 mod quit;
 
+pub use self::cmd::*;
 use self::env::*;
 use self::project::*;
 pub use self::quit::Quit;
@@ -33,4 +35,8 @@ pub fn register_utils(core: &mut Core) {
     core.add_command("environmentReset", "er", Arc::new(Mutex::new(EnvironmentReset::new())));
     let eh = Arc::new(Mutex::new(EnvironmentHelp::new(core)));
     core.add_command("environmentHelp", "eh", eh);
+}
+
+pub fn command_line_utils(core: &mut Core) {
+    core.add_command("executeScript", "es", Arc::new(Mutex::new(ExecuteScript::new())));
 }

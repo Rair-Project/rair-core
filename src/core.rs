@@ -19,6 +19,7 @@ use crate::commands::Commands;
 use crate::helper::*;
 use crate::io::*;
 use crate::loc::*;
+use crate::utils::command_line_utils;
 use crate::utils::register_utils;
 use crate::writer::Writer;
 use parking_lot::{Mutex, RwLock};
@@ -74,6 +75,7 @@ impl Core {
         register_io(self);
         register_loc(self);
         register_utils(self);
+        command_line_utils(self);
     }
     /// Returns list of all available commands in [Core].
     pub fn commands(&mut self) -> Arc<Mutex<Commands>> {
@@ -221,7 +223,7 @@ mod test_core {
         assert_eq!(core.stdout.utf8_string().unwrap(), "");
         assert_eq!(
             core.stderr.utf8_string().unwrap(),
-            "Error: Execution failed\nCommand mep is not found.\nSimilar command: map, maps, m, e, er, eh.\n"
+            "Error: Execution failed\nCommand mep is not found.\nSimilar command: map, maps, m, e, er, eh, es.\n"
         );
     }
 }
