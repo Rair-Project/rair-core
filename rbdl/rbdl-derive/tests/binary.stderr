@@ -1,0 +1,7 @@
+error: proc macro panicked
+  --> $DIR/binary.rs:19:1
+   |
+19 | rbdl_include!("tests/rbdl/binary.rbdl");
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: message: tests/rbdl/binary.rbdl: stream did not contain valid UTF-8
