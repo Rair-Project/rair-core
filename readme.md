@@ -17,9 +17,9 @@ If you are looking for the command line interface check [rair](https://github.co
 |   Module  	|   Rust Porting   |                                            Documentation                                           |
 |:-------------:|:----------------:|:--------------------------------------------------------------------------------------------------:|
 |   rcore  	|:heavy_check_mark:|[![API](https://img.shields.io/badge/api-master-purple.svg)](https://rair-project.github.io/rair-core/rcore/index.html)|
-|  renv 	    |:heavy_check_mark:|[![API](https://img.shields.io/badge/api-master-purple.svg)](https://rair-project.github.io/rair-core/renv/index.html)|
-|   rio       |:heavy_check_mark:|[![API](https://img.shields.io/badge/api-master-purple.svg)](https://rair-project.github.io/rair-core/rio/index.html)|
-|   rtrees    |:heavy_check_mark:|[![API](https://img.shields.io/badge/api-master-purple.svg)](https://rair-project.github.io/rair-core/rtrees)|
+|  renv 	    |:heavy_check_mark:|[![API](https://img.shields.io/badge/api-master-purple.svg)](https://rair-project.github.io/rair-core/rair_env/index.html)|
+|   rio       |:heavy_check_mark:|[![API](https://img.shields.io/badge/api-master-purple.svg)](https://rair-project.github.io/rair-core/rair_io/index.html)|
+|   rtrees    |:heavy_check_mark:|[![API](https://img.shields.io/badge/api-master-purple.svg)](https://rair-project.github.io/rair-core/rtrees/index.html)|
 |  R2agent  	|        NA        |NA|
 |    R2pm   	|        NA        |NA|
 |   Rabin   	|        NA        |NA|
