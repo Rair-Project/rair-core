@@ -1,0 +1,25 @@
+[package]
+name = "rbdl-derive"
+version = "0.1.0"
+authors = ["oddcoder <ahmedsoliman@oddcoder.com>"]
+edition = "2018"
+autotests = false
+
+[workspace]
+
+[lib]
+name = "rbdl"
+proc-macro = true
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rbdl-syn={path="../rbdl-syn"}
+rbdl-ast={path="../rbdl-ast"}
+syn = {version = "1.0", features=["extra-traits", "full"]}
+
+[[test]]
+name = "rbdl_testing"
+path = "tests/run_tests.rs"
+
+[dev-dependencies]
+trybuild = "1.0"

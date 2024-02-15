@@ -1,0 +1,5 @@
+error: expected string literal
+  --> $DIR/not_str.rs:19:15
+   |
+19 | rbdl_include!(2 + 2);
+   |               ^
